@@ -1,0 +1,23 @@
+{
+  "name": "DoyaltyTest2.0",
+  "version": "1.0.0",
+  "description": "form",
+  "main": "mailsend.js",
+  "scripts": {
+    "start":"node mailsend.js",
+    "server": "nodemon mailsend.js",
+    "frontend": "npm start --prefix frontend",
+    "dev":"concurrently \"npm run server\" \"npm run frontend\" " 
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemailer": "^6.6.1",
+    "nodemon": "^2.0.7"
+  }
+}
