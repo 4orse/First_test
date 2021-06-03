@@ -1,23 +1,29 @@
 {
-  "name": "Test2.0",
+  "name": "frontend",
   "version": "1.0.0",
-  "description": "form",
-  "main": "mailsend.js",
+  "proxy": "https://b8343c59db14.ngrok.io",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start":"node mailsend.js",
-    "server": "nodemon mailsend.js",
-    "frontend": "npm start --prefix frontend",
-    "dev":"concurrently \"npm run server\" \"npm run frontend\" " 
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "concurrently": "^6.2.0",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "nodemailer": "^6.6.1",
-    "nodemon": "^2.0.7"
+    "@shopify/koa-shopify-auth": "^4.1.3",
+    "@shopify/polaris": "^6.4.0",
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "isomorphic-fetch": "^3.0.0",
+    "koa": "^2.13.1",
+    "koa-router": "^8.0.8",
+    "next": "^10.2.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "webpack": "^4.46.0"
   }
 }
